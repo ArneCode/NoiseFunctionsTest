@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <br>
+speed: <input type="range" id="z-speed" min="0" max="0.1" step="0.0001" value="0.01"><br>
+subtractAlpha: <input type="checkbox" id="subtAlpha"><br/>
+greenPerc: <input type="range" min="0" max="1" step="0.01" id="greenPerc" value="0.1"><br>
+foreground Zoom: <input type="range" min="1" max="900" id="front-zoom" value="120"><br>
+background Zoom: <input type="range" min="1" max="300" id="back-zoom" value="1"><br>
+only green: <input type="checkbox" id="only-green"><br>
+replace foreground: <input type="checkbox" id="replace-fore" checked><br>
+red until: <input type="range" min="0" max="1" step="0.001" id="red-until" value="0.25"><br>
+<script src="perlin.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
